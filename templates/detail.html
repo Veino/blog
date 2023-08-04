@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+	<div class="jumbotron">
+		
+	  	<h1 class="display-4">{{post.title}}</h1>
+	  	<img src="{{post.image.url}}" class="img-fluid" alt="...">
+	  	<p class="lead">{{post.headline}}</p>
+	  	<hr class="my-4">
+	  	<p>{{post.body}}</p>
+	  	<p class="lead">
+	    <a class="jumbo btn btn-outline-success" href="{% url 'home' %}" role="button">Go back</a>
+	  </p>
+	  
+	</div>
+</div>
+
+{% endblock content %}
